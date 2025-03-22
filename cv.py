@@ -17,7 +17,7 @@ def live_video_capture():
 
         # Save frame every 2 seconds
         if time.time() - last_saved_time >= 2:
-            cv2.imwrite(f"frame{count}.jpg", frame)  # Save the frame
+            cv2.imwrite(f"data/frame{count}.jpg", frame)  # Save the frame
             print(f"Saved frame{count}.jpg")
             count += 1
             last_saved_time = time.time()  # Update time for next frame
